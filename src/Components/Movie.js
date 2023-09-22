@@ -11,7 +11,7 @@ const Movie = ({ id, img, summary, tit, date, genres }) => {
         <div className="txt">
           <p className="tit">{tit}</p>
           <p className="desc">
-            {summary.length > 235 ? `${summary.slice(0, 50)}...` : summary}
+            {summary.length > 50 ? `${summary.slice(0, 50)}...` : summary}
           </p>
           <ul>
             {genres.map((g) => (
